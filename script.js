@@ -3,9 +3,11 @@ const langSelect = document.querySelector('.language')
 
 function changeLanguage() {
     const langSelect = document.querySelector('.language')
-    const mainLink = document.querySelector('#main-link')
-    const projectsLink = document.querySelector('#projects-link')
-    const contactLink = document.querySelector('#contacts-link')
+    
+    const mainLink = document.querySelector('#pt-main-link')
+    const projectsLink = document.querySelector('#pt-projects-link')
+    const contactLink = document.querySelector('#pt-contacts-link')
+
     const firstP = document.querySelector('.first-p')
     const subParagraph = document.querySelector('.sub-paragraph')
     const mainP = document.querySelector('.main-p')
