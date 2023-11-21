@@ -3,10 +3,14 @@ const langSelect = document.querySelector('.language')
 
 function changeLanguage() {
     const langSelect = document.querySelector('.language')
+
+    const mainLink = document.querySelector('#main-link')
+    const projectsLink = document.querySelector('#projects-link')
+    const contactLink = document.querySelector('#contacts-link')
     
-    const mainLink = document.querySelector('#pt-main-link')
-    const projectsLink = document.querySelector('#pt-projects-link')
-    const contactLink = document.querySelector('#pt-contacts-link')
+    const mobileMainLink = document.querySelector('#mobile-main-link')
+    const mobileProjectsLink = document.querySelector('#mobile-projects-link')
+    const mobileContactLink = document.querySelector('#mobile-contacts-link')
 
     const firstP = document.querySelector('.first-p')
     const subParagraph = document.querySelector('.sub-paragraph')
@@ -19,6 +23,11 @@ function changeLanguage() {
         mainLink.innerHTML = `<span>#1.</span> Main`
         projectsLink.innerHTML = `<span>#2.</span> Projects`
         contactLink.innerHTML = `<span>#3.</span> Contact`
+
+        mobileMainLink.innerHTML = `<span>#1.</span> Main`
+        mobileProjectsLink.innerHTML = `<span>#2.</span> Projects`
+        mobileContactLink.innerHTML = `<span>#3.</span> Contact`
+
         firstP.innerHTML = 'Hi, my name is'
         subParagraph.innerHTML = 'and i create sites'
         mainP.innerHTML = "I'm a Web Developer, 18 years old and i am specializing in Website and Software development."
@@ -31,6 +40,11 @@ function changeLanguage() {
         mainLink.innerHTML = `<span>#1.</span> Menu`
         projectsLink.innerHTML = `<span>#2.</span> Projetos`
         contactLink.innerHTML = `<span>#3.</span> Contato`
+
+        mobileMainLink.innerHTML = `<span>#1.</span> Menu`
+        mobileProjectsLink.innerHTML = `<span>#2.</span> Projetos`
+        mobileContactLink.innerHTML = `<span>#3.</span> Contato`
+
         firstP.innerHTML = 'Olá, meu nome é'
         subParagraph.innerHTML = 'e eu crio websites.'
         mainP.innerHTML = 'Sou um Desenvolvedor Web, tenho 18 anos e estou me especializando em desenvolvimento de Websites e Softwares.'
